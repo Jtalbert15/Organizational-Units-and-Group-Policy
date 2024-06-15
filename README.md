@@ -1,6 +1,16 @@
 # Organizational-Units-and-Group-Policy
+<h1>Summary</h1>
+In this lab we will use organizational units to apply a Group Policy Object to a user. For this lab we will create a GPO that can visibly be seen so that we know our changes have taken place.
 
-To start navigate to Active Directory Users and Computers
+<h1>What is an Organizational Unit?</h1>
+
+ An Organizational Unit or an OU allows us to group users and computers. For instance, I can make a Sales OU and within that OU I can create a Users OU and a Computers OU.
+
+ <h1>What is a Group Policy Object?</h1>
+
+ A Group Policy Object or GPO allows us to create both policies and preferences for users and computers. A policy will be enforced while a preference can be changed by the user. We can link group policies to OU's within our domain. 
+
+<h1>Step 1) Creating an Organizational Unit</h1>
 
 <img width="669" alt="Screenshot 2024-06-11 at 3 26 31 PM" src="https://github.com/Jtalbert15/Organizational-Units-and-Group-Policy/assets/66844406/6ada3772-3ca4-4bd1-bda5-13a1970f16f7">
 
@@ -28,6 +38,8 @@ Now using the same process let's create 2 more OU's within our sales OU for User
 
 <img width="670" alt="Screenshot 2024-06-11 at 3 36 09 PM" src="https://github.com/Jtalbert15/Organizational-Units-and-Group-Policy/assets/66844406/f9a05cef-7311-424a-b9f2-1e63dec751dd">
 
+<h1>Creating a GPO and linking it to the Sales OU</h1>
+
 Now navigate to group policy management 
 
 <img width="659" alt="Screenshot 2024-06-11 at 3 37 49 PM" src="https://github.com/Jtalbert15/Organizational-Units-and-Group-Policy/assets/66844406/0ebbf329-30c1-4a7e-9142-9f13a6e21fcf">
@@ -47,6 +59,8 @@ Right click on the GPO and select edit...
 <img width="690" alt="Screenshot 2024-06-11 at 3 48 36 PM" src="https://github.com/Jtalbert15/Organizational-Units-and-Group-Policy/assets/66844406/19673cce-0642-45ad-9d40-f69c2fc337fa">
 
 I have selected to hide and disable all items on the desktop
+
+<h1>Step 3) Seeing our GPO in action</h1>
 
 Now we can create a user in our sales department to see our group policy in effect
 
